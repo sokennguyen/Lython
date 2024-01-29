@@ -1,7 +1,7 @@
 import random
 
 print('hello, world')
-myName = input()
+myName = 'hihi'
 print(myName)
 print('length = ' + str(len(myName)))
 
@@ -13,3 +13,11 @@ for i in range(5):
 
 for i in range(5):
     print(random.randint(1, 69))
+
+spam = ['first', 'second', 'last']
+print(spam[-1])
+
+print(random.choice(spam))
+random = random.shuffle(spam)
+for i, item in enumerate(spam):
+    print(item, end=', ')
