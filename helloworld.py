@@ -1,4 +1,5 @@
 import random
+import copy
 
 print('hello, world')
 myName = 'hihi'
@@ -21,3 +22,12 @@ print(random.choice(spam))
 random = random.shuffle(spam)
 for i, item in enumerate(spam):
     print(item, end=', ')
+
+stri = 'hihi'
+stri += 'haha'
+print(stri)
+print(id(stri))
+
+spam.append(['extra', 'list'])
+cheese = copy.deepcopy(spam)
+print(cheese)
